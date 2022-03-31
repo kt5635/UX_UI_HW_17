@@ -1,6 +1,8 @@
 .topnav {
   background: #ffffff;
   overflow: hidden;
+  margin-bottom: 0%;
+  border-bottom: 3px solid #2c5234;
 }
 .topnav a {
   float: left;
@@ -11,49 +13,56 @@
   font-style: bold;
   font-family: "Playful Display", serif;
   position: sticky;
-  border-bottom: 3px solid #2c5234;
-  list-style-type: none;
 }
-.topnav-right a:hover {
-  background-color: #f1f6f9;
+.flex-container a:hover {
+  background-color: #ffffff;
+}
+.flex-container a:hover:not(.logo) {
+  background: #f1f6f9;
 }
 .topnav a.active {
   background: #2c5234;
   color: #f1f6f9;
 }
-.topnav-right {
-  float: left;
-  padding: 1%;
-  width: 25%;
-  list-style-type: none;
-}
-
-.logo {
-  width: 25%;
-  padding: 1%;
-}
-.work {
-  width: 45%;
-  padding: 1%;
-}
-.about {
-  width: 45%;
-  padding: 1%;
-}
-.resume {
-  width: 45%;
-  padding: 1%;
-}
-.contact {
-  width: 45%;
-  padding: 1%;
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 body {
   background-color: #f1f6f9;
+  margin: 0%;
 }
 .footer {
   background-color: #ffffff;
   border-top: 3px solid #2c5234;
   list-style-type: none;
   padding: 1%;
+}
+#intro {
+  border: 1px solid #ffffff;
+  height: 500px;
+  margin-top: 0%;
+  background: url("../Images/nicolas-solerieu-o3O5Y5rxwxI-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.heroimg {
+  font-family: "Source Sans Pro", sans-serif;
+}
+h1 {
+  color: #2c5234;
+  margin-left: 10%;
+  margin-bottom: 0%;
+  padding-top: 5%;
+  padding-bottom: 0%;
+  font-size: 40px;
+}
+p {
+  color: #2c5234;
+  margin-left: 11.5%;
+  margin-top: 0%;
+  padding-top: 0%;
+  font-size: 25px;
 }
